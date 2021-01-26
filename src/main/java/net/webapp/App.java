@@ -56,6 +56,9 @@ public class App {
 
 
             get("/", (request, response) -> new ModelAndView(map, "profile.handlebars"), new HandlebarsTemplateEngine());
+
+            get("/about", (request, response) -> new ModelAndView(map, "about.handlebars"), new HandlebarsTemplateEngine());
+
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
